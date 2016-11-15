@@ -8,12 +8,10 @@ html {
 }
 
 .img-flex {
+  position: relative;
   display: block;
   width: 100%;
-  position: relative;
   top: 0;
-  left: 0;
-  bottom: 1em;
 }
 
 body {
@@ -22,40 +20,39 @@ body {
 
 .banner {
   margin: 0;
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
 }
 
 .banner-body {
-  display: inline;
   position: absolute;
-  bottom: 30em;
-  transform: translate(5%, 5em);
-  max-height: 500px;
-  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding-left: 30px;
+  max-width: 800px;
+  bottom: 50px;
+  transform: translate(2px, 4px);
 }
 
 h2 {
-  display: inline-block;
+  margin: 0 0 10px;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
-  color: white;
-  margin: 0;
-  max-height: 500px;
-  font-weight: bold;
-  max-width: 50em;
-  overflow: hidden;
+  font-weight: bolder;
 }
 
 span {
   background-color: rgba(0, 0, 0, .5);
-  line-height: 1.4;
+  color: white;
 }
 
-.banner-body p {
-  display: inline-block;
+p {
+  margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
-  float: left;
-  margin: 30px 0 0;
   font-style: italic;
-  line-height: 1.5;
 }
